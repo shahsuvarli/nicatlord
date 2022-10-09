@@ -1,0 +1,7 @@
+[
+  { "id": 0, "name": "Home", "link": "/", "sub": [] },
+  { "id": 1, "name": "Qarabagh", "link": "/qarabagh", "sub": [] },
+  { "id": 2, "name": "Photo", "link": "/photo", "sub": [] },
+  { "id": 3, "name": "Video", "link": "/video", "sub": [] },
+  { "id": 4, "name": "Bio", "link": "/bio", "sub": [] }
+]

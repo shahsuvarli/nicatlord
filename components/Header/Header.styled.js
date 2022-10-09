@@ -17,8 +17,8 @@ export const Logo = styled.h1`
   color: white;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  background-color: blue;
+  height: auto;
+  display: flex;
 `;
 
 export const Menu = styled.div`
@@ -26,10 +26,8 @@ export const Menu = styled.div`
   justify-content: space-between;
   display: flex;
   flex-direction: row;
-  /* background-color: green; */
-  width: 700px;
+  width: 40%;
   align-items: center;
-  font-size: 17px;
 `;
 
 export const Social = styled.div`

@@ -1,24 +1,30 @@
 import React from "react";
 import { HeaderMain, Logo, Menu, Social } from "./Header.styled";
-import { BsInstagram, BsYoutube } from "react-icons/bs";
-import { SiImdb } from "react-icons/si";
-import { AiOutlineYoutube } from "react-icons/ai";
+import HomeIcon from "@mui/icons-material/Home";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import menu from "./menu.json";
+import { Link, MenuItem } from "@mui/material";
 
 function Header() {
   return (
     <HeaderMain>
       <Logo>Nicat Adgozalli</Logo>
       <Menu>
-        <li>Home</li>
-        <li>Qarabağ</li>
-        <li>Photo</li>
-        <li>Video</li>
-        <li>Bio</li>
+        {menu.map((item) => {
+          return (
+            <MenuItem sx={{ fontSize: 17 }} key={item.id}>
+              <Link sx={{ textDecoration: "none" }} href={item.link}>
+                {item.name}
+              </Link>
+            </MenuItem>
+          );
+        })}
       </Menu>
       <Social>
-        <BsInstagram />
-        <AiOutlineYoutube />
-        <SiImdb />
+        <InstagramIcon />
+        <YouTubeIcon />
+        IMDB
       </Social>
     </HeaderMain>
   );
